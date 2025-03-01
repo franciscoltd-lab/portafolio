@@ -1,0 +1,18 @@
+.nav-item {
+    margin-right: 1rem;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.nav-item::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: aqua;
+    transition: 300ms;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
